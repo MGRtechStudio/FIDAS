@@ -18,7 +18,8 @@ document.querySelectorAll("nav a").forEach(a => a.onclick = () => nav.classList.
 const data = {
     dir: ["FILM DIRECTION", "DIRECT THE<br>STORY.", "History of cinema, storytelling, screenplay understanding, shot division, cinematography basics, camera movement, continuity, actor handling, editing, storyboarding, production design and a short film direction project."],
     act: ["ACTING", "PERFORM FOR<br>THE CAMERA.", "Abhinayam, Navarasas, dialogue delivery, voice and speech training, camera acting, character development, dubbing, TV & OTT techniques and audition preparation."],
-    scr: ["SCRIPT WRITING", "WRITE FOR<br>THE SCREEN.", "Story development, logline and synopsis writing, screenplay structure, dialogue writing, 3-act structure, feature films, short films, web series, documentaries and bound script preparation."]
+    scr: ["SCRIPT WRITING", "WRITE FOR<br>THE SCREEN.", "Story development, logline and synopsis writing, screenplay structure, dialogue writing, 3-act structure, feature films, short films, web series, documentaries and bound script preparation."],
+    ai: ["AI FILM MAKING", "IMAGINE. PROMPT.<br>CREATE.", "Learn an end-to-end AI-assisted filmmaking workflow: concept development, prompt design, script and storyboard creation, image and video generation, AI voice and sound, editing, VFX, continuity and a portfolio-ready AI short film."]
 };
 const view = document.querySelector("#courseView");
 document.querySelectorAll(".course-nav button").forEach(b => b.onclick = () => {
@@ -31,7 +32,7 @@ document.querySelectorAll(".course-nav button").forEach(b => b.onclick = () => {
     document.querySelector("#courseHeadline").innerHTML = d[1];
     document.querySelector("#courseCopy").textContent = d[2]
 });
-document.querySelector("#form").onsubmit = e => {
+function submitEnquiry(e) {
     e.preventDefault();
 
     const d = new FormData(e.target);
@@ -49,7 +50,9 @@ ${d.get("message") || "No message provided."}`;
     const url = "https://wa.me/916303002948?text=" + encodeURIComponent(message);
 
     window.open(url, "_blank");
-};
+}
+document.querySelector("#form")?.addEventListener("submit", submitEnquiry);
+document.querySelector("#heroForm")?.addEventListener("submit", submitEnquiry);
 const heroImages = document.querySelectorAll(".visual-main img");
 
 if (heroImages.length) {
@@ -90,7 +93,7 @@ let activeCourse = "dir";
 const detailsBtn = document.querySelector("#detailsBtn");
 document.querySelectorAll(".course-nav button").forEach(b => b.addEventListener("click", () => {
     activeCourse = b.dataset.course;
-    detailsBtn.href = "program.html?course=" + activeCourse
+    detailsBtn.href = "course.html?course=" + activeCourse
 }));
 
 const sections = [...document.querySelectorAll("main section[id]")],
