@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Program Details | FIDAS Film Academy</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <style>
+         .detail-page{
+         padding:130px 4vw 90px;min-height:100vh
+         }
+         .back{
+         font-size:10px;
+         font-weight:800;
+         letter-spacing:.12em
+         }
+         .detail-hero{
+         display:grid;
+         grid-template-columns:.9fr 1.1fr;
+         gap:5vw;align-items:end;
+         margin:55px 0}
+         .detail-hero span{
+         font-size:10px;letter-spacing:.2em;color:var(--soft)}
+         .detail-hero h1{font-size:clamp(54px,7vw,110px);line-height:.86;letter-spacing:-.07em;margin:18px 0}
+         .detail-hero p{font-size:18px;line-height:1.7;color:var(--soft)}
+         .detail-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:18px}
+         .detail-card{background:var(--card);padding:32px;border:1px solid var(--line);transition:.35s}
+         .detail-card:hover{transform:translateY(-10px);box-shadow:12px 12px 0 var(--lime)}
+         .detail-card h2{font-size:14px;letter-spacing:.14em;margin:0 0 22px}
+         .detail-card li{margin:12px 0;color:var(--soft);line-height:1.5}
+         .switcher{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:35px}
+         .switcher button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:12px 16px;font-family:inherit;font-weight:700;cursor:pointer}
+         .switcher button.active{background:var(--lime);color:#111}
+         .program-visuals{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin:0 0 42px}
+         .program-photo{min-height:360px;background-size:cover;background-position:center;transition:.4s}
+         .program-photo:hover{transform:translateY(-8px);box-shadow:14px 14px 0 var(--lime)}
+         .pv1{background-image:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1400&q=85")}.pv2{background-image:url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85")}@media(max-width:850px){.detail-hero,.detail-grid,.program-visuals{grid-template-columns:1fr}.program-photo{min-height:280px}}
+      </style>
+   </head>
+   <body>
+      <header>
+         <a class="brand" href="index.html">
+            <img src="./media/logo.jpeg" alt="FIDAS Logo">
+         </a>
+         <nav><a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="gallery.html">Gallery</a><a href="program.html">Programs</a><a href="index.html#contact">Contact</a></nav>
+         <div class="actions"><button id="theme"><span id="themeIcon">☾</span><b id="themeText">Dark</b></button><a href="index.html#contact" class="join">Enquire</a><button id="menu">☰</button></div>
+      </header>
+      <main class="detail-page">
+         <a class="back" href="index.html#courses">← BACK TO HOME</a>
+         <div class="detail-hero">
+            <div>
+               <span id="program">FLAGSHIP PROGRAM</span>
+               <h1 id="title">FILM<br>DIRECTION.</h1>
+            </div>
+            <p id="intro"></p>
+         </div>
+         <div class="switcher"><button data-c="dir">DIRECTION</button><button data-c="act">ACTING</button><button data-c="scr">SCRIPT WRITING</button></div>
+         <section class="detail-grid">
+            <article class="detail-card">
+               <h2>COURSE HIGHLIGHTS</h2>
+               <ul id="highlights"></ul>
+            </article>
+            <article class="detail-card">
+               <h2>SKILLS COVERED</h2>
+               <ul id="skills"></ul>
+            </article>
+            <article class="detail-card">
+               <h2>CAREER OPPORTUNITIES</h2>
+               <ul id="careers"></ul>
+            </article>
+         </section>
+      </main>
+      <script src="program.js"></script>
+   </body>
+</html>
