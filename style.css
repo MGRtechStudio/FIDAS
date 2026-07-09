@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 :root {
 	--bg: #f5f2ea;
 	--card: #fff;
@@ -571,6 +572,10 @@ nav {
 	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g20.avif")
 }
 
+.g21 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g21.avif")
+}
+
 .contact {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -666,8 +671,8 @@ footer {
 
 .social {
 	display: flex;
-	gap: 20px;
-	font-size: 10px
+	gap: 35px;
+	font-size: 20px
 }
 
 .wa {
@@ -1256,3 +1261,7 @@ h3,
 .hero-side-word{position:absolute;right:-30px;top:50%;transform:translateY(-50%) rotate(90deg);font-size:7px;letter-spacing:.28em;color:var(--soft);white-space:nowrap}
 @media(max-width:1050px){.hero.hero-cinematic{grid-template-columns:1fr;padding-top:125px}.hero-form-stage{padding:0}.hero-cinematic .hero-enrol-card{transform:none}.hero-side-word{display:none}.hero-proof{margin-top:45px}}
 @media(max-width:620px){.hero.hero-cinematic{padding:110px 20px 40px}.hero.hero-cinematic h1{font-size:clamp(49px,15vw,72px)}.hero-proof{display:grid;grid-template-columns:repeat(3,1fr)}.hero-proof div{display:block;margin:0;padding-right:10px}.hero-proof span{display:block;margin-top:5px}.hero-cinematic .hero-form .row{grid-template-columns:1fr}.hero-cinematic .hero-enrol-card{padding:26px 20px}.hero-cinematic .enrol-foot{display:grid;grid-template-columns:1fr 1fr}}
+.fontclr{
+	color:var(--blue);
+	line-height:.9;
+}
