@@ -8,14 +8,42 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
-      <style>.gallery-page{padding:130px 4vw 100px}.gallery-page h1{font-size:clamp(65px,9vw,140px);line-height:.82;letter-spacing:-.075em;margin:45px 0 70px}.gallery-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0;scroll-margin-top:100px}.gallery-row:nth-child(even){grid-template-columns:1.2fr .8fr}.gallery-photo{min-height:480px;background-size:cover;background-position:center;transition:.5s;position:relative;overflow:hidden}.gallery-photo:hover{transform:scale(.985);box-shadow:18px 18px 0 var(--lime)}.gallery-copy{background:var(--card);padding:50px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line);transition:.35s}.gallery-copy:hover{transform:translateY(-8px)}.gallery-copy span{font-size:10px;letter-spacing:.2em;color:var(--soft)}.gallery-copy h2{font-size:clamp(38px,5vw,74px);line-height:.9;letter-spacing:-.06em;margin:18px 0}.gallery-copy p{color:var(--soft);line-height:1.7}.video-gallery{margin-top:90px;border-top:1px solid var(--line);padding-top:70px}.video-head{max-width:760px}.video-head>span{font-size:10px;letter-spacing:.2em;color:var(--soft)}.video-head h2{font-size:clamp(48px,7vw,100px);line-height:.88;letter-spacing:-.07em;margin:20px 0}.video-head p{color:var(--soft);line-height:1.7}.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.video-card{min-height:420px;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:.4s}.video-card:after{content:"";position:absolute;inset:0;background:#0005}.video-card:hover{transform:translateY(-8px);box-shadow:16px 16px 0 var(--lime)}.video-card .play{position:relative;z-index:2;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#111;font-size:24px}.video-card b{position:absolute;left:22px;bottom:20px;z-index:2;color:white;font-size:12px;letter-spacing:.12em}.v1{background-image:url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=85")}.v2{background-image:url("https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1200&q=85")}@media(max-width:850px){.gallery-row,.gallery-row:nth-child(even),.video-grid{grid-template-columns:1fr}.gallery-photo{min-height:350px}.video-card{min-height:320px}}</style>
+      <style>.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    margin: auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+}.gallery-page{padding:130px 4vw 100px}.gallery-page h1{font-size:clamp(65px,9vw,140px);line-height:.82;letter-spacing:-.075em;margin:45px 0 70px}
+.gallery-row{
+   display:grid;
+   grid-template-columns:1fr 1fr;
+   gap:18px;
+   margin:18px 0;
+   scroll-margin-top:100px
+   }
+   .gallery-row3{
+   display:grid;
+   grid-template-columns:1fr 1fr 1fr;
+   gap:18px;
+   margin:18px 0;
+   scroll-margin-top:100px
+   }
+   .gallery-row:nth-child(even){grid-template-columns:1.2fr .8fr}.gallery-photo{min-height:480px;background-size:cover;background-position:center;transition:.5s;position:relative;overflow:hidden}.gallery-photo:hover{transform:scale(.985);box-shadow:18px 18px 0 var(--lime)}.gallery-copy{background:var(--card);padding:50px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line);transition:.35s}.gallery-copy:hover{transform:translateY(-8px)}.gallery-copy span{font-size:10px;letter-spacing:.2em;color:var(--soft)}.gallery-copy h2{font-size:clamp(38px,5vw,74px);line-height:.9;letter-spacing:-.06em;margin:18px 0}.gallery-copy p{color:var(--soft);line-height:1.7}.video-gallery{margin-top:90px;border-top:1px solid var(--line);padding-top:70px}.video-head{max-width:760px}.video-head>span{font-size:10px;letter-spacing:.2em;color:var(--soft)}.video-head h2{font-size:clamp(48px,7vw,100px);line-height:.88;letter-spacing:-.07em;margin:20px 0}.video-head p{color:var(--soft);line-height:1.7}.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.video-card{min-height:420px;background-size:cover;background-position:center;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;transition:.4s}.video-card:after{content:"";position:absolute;inset:0;background:#0005}.video-card:hover{transform:translateY(-8px);box-shadow:16px 16px 0 var(--lime)}.video-card .play{position:relative;z-index:2;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:#111;font-size:24px}.video-card b{position:absolute;left:22px;bottom:20px;z-index:2;color:white;font-size:12px;letter-spacing:.12em}.v1{background-image:url("https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=85")}.v2{background-image:url("https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1200&q=85")}@media(max-width:850px){.gallery-row,.gallery-row:nth-child(even),.video-grid{grid-template-columns:1fr}.gallery-photo{min-height:350px}.video-card{min-height:320px}}</style>
    </head>
    <body>
       <header>
          <a class="brand" href="index.html">
-            <img src="./media/logo.jpeg" alt="FIDAS Logo">
+            <img src="https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/logo.avif" alt="FIDAS Logo">
          </a>
-         <nav><a href="./">Home</a><a href="about.html">About Us</a><a href="course.html">Course</a><a href="gallery.html">Gallery</a><a href="./#contact">Contact Us</a></nav>
+         <nav><a href="./">Home</a><a href="about.html">About Us</a><a href="course.html">Courses</a><a href="gallery.html">Works</a><a href="./#contact">Contact Us</a></nav>
          <div class="actions"><button id="theme"><span id="themeIcon">☾</span><b id="themeText">Dark</b></button><a href="index.html#contact" class="join">Enquire</a><button id="menu">☰</button></div>
       </header>
       <main class="gallery-page">
@@ -23,25 +51,35 @@
          <h1>INSIDE<br>FIDAS.</h1>
          <section class="gallery-row" id="live-practicals">
             <div class="gallery-photo g1"></div>
-            <div class="gallery-photo g6"></div>
+            <div class="gallery-photo g21"></div>
          </section>
-         <section class="gallery-row" id="camera-exercises">
-            <div class="gallery-photo g8"></div>
-            <div class="gallery-photo g2"></div>
+         <section class="gallery-row3" id="camera-exercises">
+            <div class="gallery-photo g12"></div>
+            <div class="gallery-photo g17"></div>
+            <div class="gallery-photo g9"></div>
          </section>
          <section class="gallery-row" id="short-film">
             <div class="gallery-photo g7"></div>
             <div class="gallery-photo g3"></div>
          </section>
-         <section class="gallery-row" id="master-classes">
-            <div class="gallery-photo g9"></div>
+         <section class="gallery-row3" id="camera-exercises">
             <div class="gallery-photo g5"></div>
+            <div class="gallery-photo g20"></div>
+            <div class="gallery-photo g2"></div>
          </section>
-         <section class="gallery-row" id="storyboarding">
-            <div class="gallery-photo g4"></div>
+         <section class="gallery-row" id="master-classes">
+            <div class="gallery-photo g11"></div>
+            <div class="gallery-photo g18"></div>
+         </section>
+         <section class="gallery-row3" id="storyboarding">
+            <div class="gallery-photo g13"></div>
+            <div class="gallery-photo g15"></div>
             <div class="gallery-photo g10"></div>
          </section>
-         
+         <section class="gallery-row" id="master-classes">
+            <div class="gallery-photo g16"></div>
+            <div class="gallery-photo g19"></div>
+         </section>
          <section class="video-gallery">
     <div class="video-head">
         <span>VIDEOS / 06</span>
@@ -51,17 +89,37 @@
 
     <div class="video-slider">
 
-        <video controls preload="metadata">
-    <source src="https://cdn.jsdelivr.net/gh/MGRtechStudio/fidas-videos@main/video1-compressed.mp4" type="video/mp4">
-</video>
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/cwpijzJwquI"
+            title="Video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-<video controls preload="metadata">
-    <source src="https://cdn.jsdelivr.net/gh/MGRtechStudio/fidas-videos@main/video2-compressed.mp4" type="video/mp4">
-</video>
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/-bqrdeotu6g"
+            title="Video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
 
-<video controls preload="metadata">
-    <source src="https://cdn.jsdelivr.net/gh/MGRtechStudio/fidas-videos@main/video3-compressed.MP4" type="video/mp4">
-</video>
+    <div class="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/9D7TnCfit7Q"
+            title="Video 3"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
 
     </div>
 </section>

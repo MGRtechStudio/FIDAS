@@ -310,7 +310,7 @@ nav {
 
 .about-img {
 	height: 560px;
-	background: url("https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&fit=crop&w=1300&q=85") center/cover
+	background: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/camera.avif") center/cover
 }
 
 .about-text {
@@ -368,6 +368,7 @@ nav {
 .course-nav {
 	display: flex;
 	flex-direction: column;
+	
 	border: 1px solid var(--line)
 }
 
@@ -379,8 +380,9 @@ nav {
 	color: var(--ink);
 	text-align: left;
 	padding: 25px;
+	margin: 25px;
 	font-weight: 800;
-	font-size: 20px;
+	font-size: 35px;
 	cursor: pointer
 }
 
@@ -494,38 +496,79 @@ nav {
 
 .g1 {
 	grid-row: span 2;
-	background-image: url("./media/g1.jpeg")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g1.avif")
 }
 
 .g2 {
-	background-image: url("./media/g2.jpeg")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g2.avif")
 }
 
 .g3 {
-	background-image: url("./media/g3.jpeg")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g3.avif")
 }
 
 .g4 {
-	background-image: url("./media/g4.jpeg")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g4.avif")
 }
 
 .g5 {
-	background-image: url("./media/g5.png")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g5.avif")
 }
 .g6 {
-	background-image: url("./media/g6.png")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g6.avif")
 }
 .g7 {
-	background-image: url("./media/g7.png")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g7.avif")
 }
 .g8 {
-	background-image: url("./media/g8.jpeg")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g8.avif")
 }
 .g9 {
-	background-image: url("./media/g9.jpeg")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g9.avif")
 }
 .g10 {
-	background-image: url("./media/g10.jpeg")
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g10.avif")
+}
+
+.g11 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g11.avif")
+}
+
+.g12 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g12.avif")
+}
+
+.g13 {
+	grid-row: span 2;
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g13.avif")
+}
+
+.g14 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g14.avif")
+}
+
+.g15 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g15.avif")
+}
+
+.g16 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g16.avif")
+}
+
+.g17 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g17.avif")
+}
+
+.g18 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g18.avif")
+}
+
+.g19 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g19.avif")
+}
+
+.g20 {
+	background-image: url("https://raw.githubusercontent.com/MGRtechStudio/fidas_media/refs/heads/main/g20.avif")
 }
 
 .contact {
@@ -1009,7 +1052,7 @@ h3,
 
 .course-nav button:hover {
 	transform: translateX(8px);
-	background: var(--card);
+	
 	box-shadow: 8px 8px 0 var(--lime)
 }
 
