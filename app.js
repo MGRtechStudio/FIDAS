@@ -47,7 +47,7 @@ function submitEnquiry(e) {
 *Message:*
 ${d.get("message") || "No message provided."}`;
 
-    const url = "https://wa.me/916303002948?text=" + encodeURIComponent(message);
+    const url = "https://wa.me/916303002943?text=" + encodeURIComponent(message);
 
     window.open(url, "_blank");
 }
